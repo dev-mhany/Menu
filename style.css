@@ -1,0 +1,23 @@
+.banner {
+    background: linear-gradient(90.26deg, rgba(0, 0, 0, 0.6) 13.25%, rgba(0, 0, 0, 0) 50.56%, rgba(0, 0, 0, 0.48) 79.94%),
+        url(src/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+}
+
+.banner h1 {
+    color: #FDC500;
+    font-weight: 1000;
+    padding: 100px 0px 20px 100px;
+    /*top,right,bottom,left */
+}
+
+.banner p {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
