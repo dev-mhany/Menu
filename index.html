@@ -7,6 +7,9 @@
   <title>HOTEL-MENU</title>
   <link rel="shortcut icon" href="src/favicon.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
@@ -24,78 +27,55 @@
     <p>Order Yummy Fresh & Healthy Food Anytime</p>
   </div>
   <div class="owl-carousel owl-theme" id="owl">
-    <div class="item">
+    <div class="item active">
       <h4>Chinese Main Course</h4>
-      <p>Veg<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-success fw-bold" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg></p>
+      <p>Veg <i class='fas fa-circle' id="green"></i></p>
     </div>
     <div class="item">
       <h4>Chinese Main Course</h4>
-      <p>Non-Veg<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-danger" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg></p>
+      <p>Non-Veg <i class='fas fa-circle' id="red"></i></p>
     </div>
     <div class="item">
       <h4>Chinese Starter</h4>
-      <p>Veg<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-success" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg></p>
+      <p>Veg <i class='fas fa-circle' id="green"></i></p>
     </div>
     <div class="item">
       <h4>Chinese Starter</h4>
-      <p>Non-Veg<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-danger" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg></p>
+      <p>Non-Veg <i class='fas fa-circle' id="red"></i></p>
     </div>
     <div class="item">
       <h4>Sandwich</h4>
-      <p>Both<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-success" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-danger" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg></p>
+      <p>Both <i class='fas fa-circle' id="green"></i>
+        <i class='fas fa-circle' id="red"></i>
+      </p>
     </div>
     <div class="item">
       <h4>Pasta</h4>
-      <p>Both<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-success" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-danger" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg></p>
+      <p>Both <i class='fas fa-circle' id="green"></i>
+        <i class='fas fa-circle' id="red"></i>
+      </p>
     </div>
     <div class="item">
       <h4>Rolls</h4>
-      <p>Both<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-success" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-dot text-danger" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-        </svg></p>
+      <p>Both <i class='fas fa-circle' id="green"></i>
+        <i class='fas fa-circle' id="red"></i>
+      </p>
     </div>
     <div class="item">
-      <h4>8</h4>
+      <h4>RICE/PULAO BIRYANI</h4>
+      <p>Both <i class='fas fa-circle' id="green"></i>
+        <i class='fas fa-circle' id="red"></i>
+      </p>
     </div>
     <div class="item">
-      <h4>9</h4>
+      <h4>Non-Veg</h4>
+      <p><i class='fas fa-circle' id="red"></i></p>
     </div>
     <div class="item">
-      <h4>10</h4>
+      <h4>DESSERT- ICECREAMS</h4>
     </div>
     <div class="item">
-      <h4>11</h4>
-    </div>
-    <div class="item">
-      <h4>12</h4>
+      <h4>Soft-Drinks</h4>
     </div>
   </div>
   <div class="food">
