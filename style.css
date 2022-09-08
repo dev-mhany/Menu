@@ -68,10 +68,59 @@
 
 .food {
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 .food h1 {
     padding: 0px 20px;
+}
+
+/* Float three columns side by side */
+.food .row .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.food .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+}
+
+/* Style the counter cards */
+.food .row .column .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 100px 30px 30px 100px;
+    background: #FAEAEA;
+    text-transform: capitalize;
+}
+
+.food .row .column .card .text {
+    font-size: 20px;
+    float: right;
+}
+
+.food .row .column .card .image {
+    float: left;
+    padding: 0 30px 0 0;
+}
+
+.food .row .column img {
+    pointer-events: none;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: #fff;
 }
 
 @media (max-width:420px) {
@@ -99,6 +148,19 @@
 
     .item p {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .food .row .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .food .row .column .card .text {
+        font-size: 15px;
+        float: right;
     }
 }
 
