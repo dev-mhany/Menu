@@ -117,6 +117,18 @@
     color: #2C0412;
 }
 
+.food .row .column .card .text button {
+    border: none;
+    float: right;
+    background: #FAEAEA;
+}
+
+.food .row .column .card .text input {
+    border: none;
+    background: #FAEAEA;
+    pointer-events: none;
+}
+
 .food .row .column .card .image {
     float: left;
     padding: 0 30px 0 0;
@@ -134,10 +146,11 @@
     .food .row .column .card .text {
         font-size: 10px !important;
     }
-    .food .row .column .card .text i{
+
+    .food .row .column .card .text i {
         font-size: 15px !important;
         padding-bottom: 100px !important;
-    }    
+    }
 
 }
 
