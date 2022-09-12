@@ -62,3 +62,45 @@ function orderadd8() {
   i++;
   document.getElementById("inc8").value = i;
 }
+function gotowhatsapp() {
+  var na1 = document.getElementById("inc0").value;
+  var na2 = document.getElementById("inc1").value;
+  var na3 = document.getElementById("inc2").value;
+  var na4 = document.getElementById("inc3").value;
+  var na5 = document.getElementById("inc4").value;
+  var na6 = document.getElementById("inc5").value;
+  var na7 = document.getElementById("inc6").value;
+  var na8 = document.getElementById("inc7").value;
+  var na9 = document.getElementById("inc8").value;
+
+  var url =
+    "https://wa.me/917735886881?text=" +
+    "Non-veg-chowmin - " +
+    na1 +
+    "%0a" +
+    "chowmin - " +
+    na2 +
+    "%0a" +
+    "Nachos - " +
+    na3 +
+    "%0a" +
+    "Salad - " +
+    na4 +
+    "%0a" +
+    "veg-chowmin - " +
+    na5 +
+    "%0a" +
+    "Rolls - " +
+    na6 +
+    "%0a" +
+    "Noodles" +
+    na7 +
+    "%0a" +
+    "Special-food - " +
+    na8 +
+    "%0a" +
+    "Ramen - " +
+    na9;
+
+  window.open(url, "_blank").focus();
+}
