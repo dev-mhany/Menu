@@ -11,19 +11,19 @@ $(".owl-carousel").owlCarousel({
     600: {
       items: 3,
     },
-    700:{
-      items:3,
+    700: {
+      items: 3,
     },
     1000: {
       items: 7,
       dots: true,
     },
-    1024:{
-      items:5,
+    1024: {
+      items: 5,
     },
-    1440:{
-      items:7,
-    }
+    1440: {
+      items: 7,
+    },
   },
 });
 var a = 0;
@@ -72,6 +72,7 @@ function orderadd8() {
   document.getElementById("inc8").value = i;
 }
 function gotowhatsapp() {
+  var payment = document.getElementById("payment").value;
   var na1 = document.getElementById("inc0").value;
   var na2 = document.getElementById("inc1").value;
   var na3 = document.getElementById("inc2").value;
@@ -83,7 +84,10 @@ function gotowhatsapp() {
   var na9 = document.getElementById("inc8").value;
 
   var url =
-    "https://wa.me/917735886881?text=" +
+    "https://wa.me/919109909256?text=" +
+    "Payment - " +
+    payment +
+    "%0a" +
     "Non-veg-chowmin - " +
     na1 +
     "%0a" +
@@ -102,7 +106,7 @@ function gotowhatsapp() {
     "Rolls - " +
     na6 +
     "%0a" +
-    "Noodles" +
+    "Noodles - " +
     na7 +
     "%0a" +
     "Special-food - " +
@@ -111,5 +115,5 @@ function gotowhatsapp() {
     "Ramen - " +
     na9;
 
-  window.open(url, "_blank").focus();
+  window.open(url, "_blank");
 }
