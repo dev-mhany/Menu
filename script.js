@@ -11,10 +11,19 @@ $(".owl-carousel").owlCarousel({
     600: {
       items: 3,
     },
+    700:{
+      items:3,
+    },
     1000: {
       items: 7,
       dots: true,
     },
+    1024:{
+      items:5,
+    },
+    1440:{
+      items:7,
+    }
   },
 });
 var a = 0;

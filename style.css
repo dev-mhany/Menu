@@ -52,6 +52,7 @@
     text-transform: uppercase;
     padding: 35px 10px 0 10px;
     margin: auto;
+    font-size: 20px;
 }
 
 .item p {
@@ -70,6 +71,7 @@
 .food {
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    margin: 10px;
 }
 
 .food h1 {
@@ -151,11 +153,16 @@
     padding: 10px;
     margin: 10px;
     position: fixed;
-    left: 93%;
-    top: 500px;
+    left: 90%;
+    bottom: 10px;
 }
 
 @media (max-width:325px) {
+    .item {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
     .food .row .column .card .text {
         font-size: 10px !important;
     }
@@ -166,13 +173,12 @@
     }
 
     .submit {
-        top: 400px;
         left: 73%;
     }
 
 }
 
-@media (max-width:420px) {
+@media (max-width:426px) {
     .banner h1 {
         padding: 70px 0px 10px 70px;
     }
@@ -186,8 +192,8 @@
     }
 
     .item {
-        height: 100px;
-        width: 100px;
+        height: 100px !important;
+        width: 100px !important;
     }
 
     .item h4 {
@@ -199,13 +205,34 @@
         font-size: 14px;
     }
 
+    .food {
+        margin: 0;
+    }
+
     .submit {
-        top: 420px;
         left: 80%;
     }
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 769px) {
+    .banner h1 {
+        padding: 70px 0px 10px 70px;
+    }
+
+    .banner p {
+        font-size: 20px;
+    }
+
+    #owl {
+        top: -50px;
+    }
+
+    .item {
+        height: 150px;
+        width: 150px;
+    }
+
     .food .row .column {
         width: 100%;
         display: block;
@@ -215,11 +242,6 @@
     .food .row .column .card .text {
         font-size: 15px;
         float: right;
-    }
-
-    .submit {
-        top: 410px;
-        left: 80%;
     }
 }
 
@@ -235,5 +257,18 @@
     .item {
         height: 155px;
         width: 155px;
+    }
+}
+
+@media (max-width:1025px) {
+    .food .row .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .food .row .column .card .text {
+        font-size: 15px;
+        float: right;
     }
 }
