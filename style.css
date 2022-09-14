@@ -60,11 +60,21 @@
     margin: auto;
 }
 
-.item #green {
+.item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.item a:hover {
+    background: #FFA361;
+    color: #111;
+}
+
+#green {
     color: green;
 }
 
-.item #red {
+#red {
     color: red;
 }
 
@@ -147,14 +157,29 @@
 .submit {
     background: #2C0412;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 10px;
     height: 50px;
-    width: 50px !important;
+    width: 150px;
     padding: 10px;
     margin: 10px;
     position: fixed;
-    left: 90%;
+    left: 88%;
     bottom: 10px;
+}
+
+.submit:hover {
+    background: #FFA361;
+    color: #111;
+    border: none;
+}
+.food{
+    margin: 10px;
+}
+h2:after {
+    content: ' ';
+    display: block;
+    border: 2px solid black;
+    width: 30%;
 }
 
 @media (max-width:325px) {
@@ -171,11 +196,6 @@
         font-size: 15px !important;
         padding-bottom: 100px !important;
     }
-
-    .submit {
-        left: 73%;
-    }
-
 }
 
 @media (max-width:426px) {
@@ -205,12 +225,11 @@
         font-size: 14px;
     }
 
-    .food {
-        margin: 0;
+    .submit{
+        left: 49% !important;
     }
-
-    .submit {
-        left: 80%;
+    h2:after{
+        width: 82% !important;
     }
 }
 
@@ -270,5 +289,8 @@
     .food .row .column .card .text {
         font-size: 15px;
         float: right;
+    }
+    .submit{
+        left: 80%;
     }
 }
