@@ -211,6 +211,12 @@ h2:after {
         font-size: 15px !important;
         padding-bottom: 100px !important;
     }
+    .food .row .column .card .text label {
+        margin-left: -6px;
+    }
+    #payment{
+        margin-left: 1px;
+    }
 }
 
 @media (max-width:426px) {
