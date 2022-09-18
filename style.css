@@ -2,6 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .banner {
     background: linear-gradient(90.26deg, rgba(0, 0, 0, 0.6) 13.25%, rgba(0, 0, 0, 0) 50.56%, rgba(0, 0, 0, 0.48) 79.94%),
         url(src/banner.jpg);
