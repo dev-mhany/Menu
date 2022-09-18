@@ -84,40 +84,52 @@ function gotowhatsapp() {
   var na8 = document.getElementById("inc7").value;
   var na9 = document.getElementById("inc8").value;
 
-  var url =
-    "https://wa.me/919109909256?text=" +
-    "Table - " +
-    table +
-    "%0a" +
-    "Payment - " +
-    payment +
-    "%0a" +
-    "Non-veg-chowmin - " +
-    na1 +
-    "%0a" +
-    "chowmin - " +
-    na2 +
-    "%0a" +
-    "Nachos - " +
-    na3 +
-    "%0a" +
-    "Salad - " +
-    na4 +
-    "%0a" +
-    "veg-chowmin - " +
-    na5 +
-    "%0a" +
-    "Rolls - " +
-    na6 +
-    "%0a" +
-    "Noodles - " +
-    na7 +
-    "%0a" +
-    "Special-food - " +
-    na8 +
-    "%0a" +
-    "Ramen - " +
-    na9;
+  if (
+    na1 > 0 ||
+    na2 > 0 ||
+    na3 > 0 ||
+    na4 > 0 ||
+    na5 > 0 ||
+    na6 > 0 ||
+    na7 > 0 ||
+    na8 > 0 ||
+    na9 > 0
+  ) {
+    var url =
+      "https://wa.me/919109909256?text=" +
+      "Table - " +
+      table +
+      "%0a" +
+      "Payment - " +
+      payment +
+      "%0a" +
+      "Non-veg-chowmin - " +
+      na1 +
+      "%0a" +
+      "chowmin - " +
+      na2 +
+      "%0a" +
+      "Nachos - " +
+      na3 +
+      "%0a" +
+      "Salad - " +
+      na4 +
+      "%0a" +
+      "veg-chowmin - " +
+      na5 +
+      "%0a" +
+      "Rolls - " +
+      na6 +
+      "%0a" +
+      "Noodles - " +
+      na7 +
+      "%0a" +
+      "Special-food - " +
+      na8 +
+      "%0a" +
+      "Ramen - " +
+      na9;
 
-  window.open(url, "_blank");
+    window.open(url, "_blank");
+  }
 }
