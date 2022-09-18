@@ -72,6 +72,7 @@ function orderadd8() {
   document.getElementById("inc8").value = i;
 }
 function gotowhatsapp() {
+  var table = document.getElementById("table").value;
   var payment = document.getElementById("payment").value;
   var na1 = document.getElementById("inc0").value;
   var na2 = document.getElementById("inc1").value;
@@ -85,6 +86,9 @@ function gotowhatsapp() {
 
   var url =
     "https://wa.me/919109909256?text=" +
+    "Table - " +
+    table +
+    "%0a" +
     "Payment - " +
     payment +
     "%0a" +
