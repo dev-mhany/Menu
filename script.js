@@ -85,15 +85,16 @@ function gotowhatsapp() {
   var na9 = document.getElementById("inc8").value;
 
   if (
-    na1 > 0 ||
-    na2 > 0 ||
-    na3 > 0 ||
-    na4 > 0 ||
-    na5 > 0 ||
-    na6 > 0 ||
-    na7 > 0 ||
-    na8 > 0 ||
-    na9 > 0
+    (na1 > 0 ||
+      na2 > 0 ||
+      na3 > 0 ||
+      na4 > 0 ||
+      na5 > 0 ||
+      na6 > 0 ||
+      na7 > 0 ||
+      na8 > 0 ||
+      na9 > 0) &&
+    payment != ""
   ) {
     var url =
       "https://wa.me/919109909256?text=" +
