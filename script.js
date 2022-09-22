@@ -83,7 +83,42 @@ function gotowhatsapp() {
   var na7 = document.getElementById("inc6").value;
   var na8 = document.getElementById("inc7").value;
   var na9 = document.getElementById("inc8").value;
-
+  var o1 = "Non-veg chowmin - " + na1 + "%0a";
+  var o2 = "Chowmin - " + na2 + "%0a";
+  var o3 = "Nachos - " + na3 + "%0a";
+  var o4 = "Salad - " + na4 + "%0a";
+  var o5 = "Veg chowmin - " + na5 + "%0a";
+  var o6 = "Rolls - " + na6 + "%0a";
+  var o7 = "Noodles - " + na7 + "%0a";
+  var o8 = "Special-food - " + na8 + "%0a";
+  var o9 = "Ramen - " + na9;
+  if (na1 == 0) {
+    o1 = "";
+  }
+  if (na2 == 0) {
+    o2 = "";
+  }
+  if (na3 == 0) {
+    o3 = "";
+  }
+  if (na4 == 0) {
+    o4 = "";
+  }
+  if (na5 == 0) {
+    o5 = "";
+  }
+  if (na6 == 0) {
+    o6 = "";
+  }
+  if (na7 == 0) {
+    o7 = "";
+  }
+  if (na8 == 0) {
+    o8 = "";
+  }
+  if (na9 == 0) {
+    o9 = "";
+  }
   if (
     (na1 > 0 ||
       na2 > 0 ||
@@ -97,39 +132,22 @@ function gotowhatsapp() {
     payment != ""
   ) {
     var url =
-      "https://wa.me/919109909256?text=" +
+      "https://wa.me/917735886881?text=" +
       "Table - " +
       table +
       "%0a" +
       "Payment - " +
       payment +
       "%0a" +
-      "Non-veg-chowmin - " +
-      na1 +
-      "%0a" +
-      "chowmin - " +
-      na2 +
-      "%0a" +
-      "Nachos - " +
-      na3 +
-      "%0a" +
-      "Salad - " +
-      na4 +
-      "%0a" +
-      "veg-chowmin - " +
-      na5 +
-      "%0a" +
-      "Rolls - " +
-      na6 +
-      "%0a" +
-      "Noodles - " +
-      na7 +
-      "%0a" +
-      "Special-food - " +
-      na8 +
-      "%0a" +
-      "Ramen - " +
-      na9;
+      o1 +
+      o2 +
+      o3 +
+      o4 +
+      o5 +
+      o6 +
+      o7 +
+      o8 +
+      o9;
 
     window.open(url, "_blank");
   }
