@@ -94,30 +94,39 @@ function gotowhatsapp() {
   var o9 = "Ramen - " + na9;
   if (na1 == 0) {
     o1 = "";
+    document.getElementById("inc0").name = "";
   }
   if (na2 == 0) {
     o2 = "";
+    document.getElementById("inc1").name = "";
   }
   if (na3 == 0) {
     o3 = "";
+    document.getElementById("inc2").name = "";
   }
   if (na4 == 0) {
     o4 = "";
+    document.getElementById("inc3").name = "";
   }
   if (na5 == 0) {
     o5 = "";
+    document.getElementById("inc4").name = "";
   }
   if (na6 == 0) {
     o6 = "";
+    document.getElementById("inc5").name = "";
   }
   if (na7 == 0) {
     o7 = "";
+    document.getElementById("inc6").name = "";
   }
   if (na8 == 0) {
     o8 = "";
+    document.getElementById("inc7").name = "";
   }
   if (na9 == 0) {
     o9 = "";
+    document.getElementById("inc8").name = "";
   }
   if (
     (na1 > 0 ||
