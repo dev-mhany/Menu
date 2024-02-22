@@ -141,7 +141,7 @@ function gotowhatsapp() {
     payment != ""
   ) {
     var url =
-      "https://wa.me/917735886881?text=" +
+      "https://wa.me/+201029384721?text=" +
       "Table - " +
       table +
       "%0a" +
